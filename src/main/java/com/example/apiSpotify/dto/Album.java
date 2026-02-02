@@ -1,4 +1,4 @@
-package com.example.apiSpotify.Mappers;
+package com.example.apiSpotify.dto;
 import static com.jayway.jsonpath.JsonPath.parse;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -7,17 +7,21 @@ import java.util.List;
 
 public class Album {
 
+//    @Autowired
+//    public Album album;
+
     @JsonProperty("name")
     private String name;
 
     @JsonProperty("artists")
-    private List<Artists> artists;
+    private List<Artist> artists; // nombre, id, uri
 
     @JsonProperty("release_date")
     private String releaseDate;
 
     @JsonProperty("total_tracks")
     private Integer total_tracks;
+
 
     //private String nombreArtista;
 
@@ -37,23 +41,13 @@ public class Album {
         this.total_tracks = total_tracks;
     }
 
-    public List<Artists> getArtists() {
+    public List<Artist> getArtists() {
         return artists;
     }
 
-    public void setArtists(List<Artists> artists) {
+    public void setArtists(List<Artist> artists) {
         this.artists = artists;
     }
-
-//    public String getNombreArtista() {
-//        return nombreArtista;
-//    }
-//
-//    public void setNombreArtista(String nombreArtista) {
-//        this.nombreArtista = nombreArtista;
-//    }
-
-
 
     public String getReleaseDate() {
         return releaseDate;
@@ -67,7 +61,7 @@ public class Album {
     public String toString() {
         return "Album{" + "\n" +
                 "nombre= " + name + '\n' +
-                "artista= " + artists.toString()+ '\n' +
+                "artista= " + artists+ '\n' +
                 "fecha salida= " + releaseDate + '\n' +
                 "canciones= " + total_tracks +
                 '}';

@@ -1,0 +1,47 @@
+package com.example.apiSpotify.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class ArtistForAlbum {
+    @JsonProperty("name")
+    private String name;
+
+    @JsonProperty("id")
+    private String id;
+
+    @JsonProperty("uri")
+    private String uri;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUri() {
+        return uri;
+    }
+
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+
+    @Override
+    public String toString() {
+        return "ArtistForAlbum{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", uri='" + uri + '\'' +
+                '}';
+    }
+}

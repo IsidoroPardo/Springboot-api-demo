@@ -1,4 +1,4 @@
-package com.example.apiSpotify.AppProperties;
+package com.example.apiSpotify.appProperties;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +22,12 @@ public class GetAppProperties {
         return appProperties.getRedirectUri();
     }
 
-    @PostConstruct
-    public void init() {
-        System.out.println("GetAppProperties: ");
-        System.out.println("Client ID: " + getClientId());
-        System.out.println("Redirect URI: " + getRedirectUri());
-        System.out.println();
-    }
+//    @PostConstruct
+//    public void init() {
+//        System.out.println("GetAppProperties: ");
+//        System.out.println("Client ID: " + getClientId());
+//        System.out.println("Redirect URI: " + getRedirectUri());
+//        System.out.println();
+//    }
 
 }
