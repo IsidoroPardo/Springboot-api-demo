@@ -21,4 +21,4 @@ Es necesario añadir un id de usuario de spotify en el archivo src/main/java/com
 
 - Arrancar con: mvn spring-boot
 - Disponible en: http://localhost:8080
-- Ejemplo de petición: curl http://localhost:8080/api/2ye2Wgw4gimLv2eAKyk1NB?si=b3be439ee65542a4 (id de Metalica)
+- Ejemplo de petición: curl http://localhost:8080/api/2ye2Wgw4gimLv2eAKyk1NB?si=b3be439ee65542a4 (id de Metallica)
